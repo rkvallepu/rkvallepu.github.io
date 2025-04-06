@@ -14,6 +14,7 @@
       color: #333;
       line-height: 1.6;
     }
+
     nav {
       text-align: center;
       padding: 0.5rem 1rem;
@@ -22,21 +23,54 @@
       top: 0;
       z-index: 1000;
     }
-    <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  ...
-</nav>
+
+    .nav-brand {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .nav-name {
+      color: white;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
-    nav a:hover, nav a.active {
+
+    nav a:hover,
+    nav a.active {
       color: #ffd700;
       transition: 0.3s;
     }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2c5364;
+      margin-bottom: 1rem;
+    }
+
     footer {
       background: linear-gradient(90deg, #191970, #2800c9);
       color: white;
@@ -44,37 +78,32 @@
       padding: 1rem;
       margin-top: 3rem;
     }
-    section {
-      padding: 2rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #2c5364;
-      margin-bottom: 1rem;
-    }
   </style>
 </head>
+
 <body>
-<nav>
-  <div class="nav-brand">
-    <img src="profile1.jpg" alt="RV" class="nav-logo">
-    <span class="nav-name">Ravikumar Vallepu</span>
-  </div>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="experience.html">Experience</a>
-  <a href="publications.html" class="active">Publications</a>
-  <a href="judging.html">Judging</a>
-  <a href="memberships.html">Memberships</a>
-  <a href="certifications.html">Certifications</a>
-  <a href="recognition.html">Recognition</a>
-  <a href="talks.html">Talks</a>
-  <a href="contact.html">Contact</a>
-</nav>
-  <h2>About</h2>
-  <p>Content for About will go here.</p>
-</section>
+  <nav>
+    <div class="nav-brand">
+      <img src="profile1.jpg" alt="RV" class="nav-logo">
+      <span class="nav-name">Ravikumar Vallepu</span>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="experience.html">Experience</a>
+    <a href="publications.html">Publications</a>
+    <a href="judging.html">Judging</a>
+    <a href="memberships.html">Memberships</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="recognition.html">Recognition</a>
+    <a href="talks.html">Talks</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>About</h2>
+    <p>Content for About will go here.</p>
+  </section>
+
   <footer>
     <p>&copy; 2025 Ravikumar Vallepu. All rights reserved.</p>
   </footer>
