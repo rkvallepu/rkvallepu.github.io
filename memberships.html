@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Memberships | Ravikumar Vallepu</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
@@ -14,6 +14,7 @@
       color: #333;
       line-height: 1.6;
     }
+
     nav {
       text-align: center;
       padding: 0.5rem 1rem;
@@ -21,17 +22,98 @@
       position: sticky;
       top: 0;
       z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-    nav a {
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .nav-name {
       color: white;
-      margin: 0 15px;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: white;
+      margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
     }
-    nav a:hover, nav a.active {
+
+    .nav-links a:hover,
+    .nav-links a.active {
       color: #ffd700;
       transition: 0.3s;
     }
+
+    header {
+      background-color: #191970;
+      color: white;
+      padding: 2.5rem 1rem;
+    }
+
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2c5364;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 1.2rem;
+    }
+
     footer {
       background: linear-gradient(90deg, #191970, #2800c9);
       color: white;
@@ -39,34 +121,49 @@
       padding: 1rem;
       margin-top: 3rem;
     }
-    section {
-      padding: 2rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #2c5364;
-      margin-bottom: 1rem;
-    }
   </style>
 </head>
 <body>
-<nav>
-    <a href="index.html" class="">Home</a>
-    <a href="about.html" class="">About</a>
-    <a href="experience.html" class="">Experience</a>
-    <a href="publications.html" class="">Publications</a>
-    <a href="judging.html" class="">Judging</a>
-    <a href="memberships.html" class="active">Memberships</a>
-    <a href="certifications.html" class="">Certifications</a>
-    <a href="recognition.html" class="">Recognition</a>
-    <a href="talks.html" class="">Talks</a>
-    <a href="contact.html" class="">Contact</a>
-    
-  </nav><section>
-  <h2>Memberships</h2>
-  <p>Content for Memberships will go here.</p>
-</section>
+  <nav>
+    <div class="nav-brand">
+      <img src="profile1.jpg" alt="RV" class="nav-logo" />
+      <span class="nav-name">Ravikumar Vallepu</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="publications.html">Publications</a>
+      <a href="judging.html">Judging</a>
+      <a href="memberships.html" class="active">Memberships</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="recognition.html">Recognition</a>
+      <a href="talks.html">Talks</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <img src="profile1.jpg" alt="Ravikumar Vallepu" />
+      <div>
+        <h1>Ravikumar Vallepu</h1>
+        <p>Enterprise Data Architect | Certified SAP MDG & AI/ML Expert | Global Contributor to Secure MDM Innovation</p>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Professional Memberships</h2>
+    <ul>
+      <li><strong>Fellow</strong> – Soft Computing Research Society (SCRS), 2025</li>
+      <li><strong>Fellow</strong> – The Institution of Electronics and Telecommunication Engineers (IETE), 2024</li>
+      <li><strong>Senior Member</strong> – Institute of Electrical and Electronics Engineers (IEEE), 2023</li>
+      <li><strong>Professional Member</strong> – British Computer Society (BCS), 2024</li>
+      <li><strong>Fellow</strong> – SAS Eminent Fellow Member (SEFM), 2025</li>
+    </ul>
+  </section>
+
   <footer>
     <p>&copy; 2025 Ravikumar Vallepu. All rights reserved.</p>
   </footer>
