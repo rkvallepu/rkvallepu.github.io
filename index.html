@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ravikumar Vallepu</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
@@ -32,8 +32,6 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      opacity: 0;
-      transition: opacity 0.5s ease;
     }
 
     .nav-logo {
@@ -56,7 +54,8 @@
       font-weight: bold;
     }
 
-    nav a:hover {
+    nav a:hover,
+    nav a.active {
       color: #ffd700;
       transition: 0.3s;
     }
@@ -64,7 +63,7 @@
     header {
       background-color: #191970;
       color: white;
-      padding: 2.5rem 1rem;
+      padding: 3rem 1rem;
     }
 
     header .container {
@@ -97,21 +96,15 @@
       color: #ddd;
     }
 
-section {
-  padding: 1.2rem 1rem;
-  margin-bottom: 1rem; /* Add this */
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
 
     h2 {
       color: #2c5364;
       margin-bottom: 1rem;
-    }
-
-    ul {
-      padding-left: 20px;
     }
 
     footer {
@@ -121,50 +114,30 @@ section {
       padding: 1rem;
       margin-top: 3rem;
     }
-section h2 {
-  margin-bottom: 0.6rem; /* reduces space below section titles */
-}
-
-section p {
-  margin-bottom: 0.8rem; /* reduces space between paragraphs */
-}
-
-section ul {
-  margin-top: 0.2rem;
-  margin-bottom: 0.8rem; /* reduces space below lists */
-}
-
-section li {
-  margin-bottom: 0.4rem; /* tightens spacing between list items */
-}
-
-    .social-icons a {
-      margin-right: 15px;
-      font-size: 1.5rem;
-      color: #2c5364;
-    }
   </style>
 </head>
 
 <body>
-  <nav id="navbar">
-    <div class="nav-brand" id="navBrand">
-      <img src="profile.jpg" alt="RV" class="nav-logo">
+  <nav>
+    <div class="nav-brand">
+      <img src="profile1.jpg" alt="RV" class="nav-logo" />
       <span class="nav-name">Ravikumar Vallepu</span>
     </div>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#publications">Publications</a>
-    <a href="#judging">Judging</a>
-    <a href="#memberships">Memberships</a>
-    <a href="#recognition">Awards</a>
-    <a href="#talks">Talks</a> <!-- 👈 Add this line -->
-    <a href="#contact">Contact</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="experience.html">Experience</a>
+    <a href="publications.html">Publications</a>
+    <a href="judging.html">Judging</a>
+    <a href="memberships.html">Memberships</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="recognition.html">Recognition</a>
+    <a href="talks.html">Talks</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <header>
     <div class="container">
-      <img src="profile.jpg" alt="Ravikumar Vallepu">
+      <img src="profile1.jpg" alt="Ravikumar Vallepu" />
       <div>
         <h1>Ravikumar Vallepu</h1>
         <p>Enterprise Data Architect | Certified SAP MDG & AI/ML Expert | Global Contributor to Secure MDM Innovation</p>
@@ -172,124 +145,82 @@ section li {
     </div>
   </header>
 
- 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>With 15+ years of global IT leadership, I am a <strong>Certified SAP Master Data Governance Architect</strong> with a proven record of delivering innovative, enterprise-scale solutions across pharmaceuticals, healthcare, retail, manufacturing, and beyond. My core focus lies in <strong>Master Data Governance (MDG)</strong>, data integration, quality, privacy, cybersecurity, and SAP archiving.</p>
-    <p>I bring deep expertise in <strong>Artificial Intelligence (AI)</strong> and <strong>Machine Learning (ML)</strong>—developing AI-driven data pipelines, governance automation, and predictive analytics frameworks tailored for life sciences and regulated industries. My published research explores how AI/ML can reshape enterprise data management and compliance.</p>
-    <p>As a recognized thought leader, I serve as an international speaker, conference session chair, and judge for global innovation platforms like the Edison Awards and IEEE events. I regularly contribute to the AI and MDM communities through scholarly publications, technical articles, and peer reviews.</p>
-    <p>My work emphasizes <strong>secure data architecture</strong>—incorporating cybersecurity protocols and compliance frameworks (HIPAA, GDPR, MDR) into every stage of the data lifecycle. I’ve led product development initiatives, global rollouts, and SAP MDG transformations across 80+ countries.</p>
-    <p><strong>Key Skills & Certifications:</strong><br> SAP MDG, SAP MDM, SAP BTP, SAP Ariba SLP Integration, SAP SD/MM/SRM/SLM, Data Migration, SAP BODS, SAP IS, Cybersecurity, AI/ML, SAP Archiving<br><strong>Certified SAP Development Professional – ABAP | SAP MDG 1909 | PMP Certified</strong></p>
-    <p>I take pride in transforming concepts into practical solutions, coaching teams, and being a trusted resource for peers and clients alike.</p>
-    
+  <section>
+    <h2>Home</h2>
+    <p>Welcome! This is the official personal website of Ravikumar Vallepu. Explore my work, research, judging roles, professional affiliations, and thought leadership in SAP MDG, AI/ML, and data governance innovation.</p>
   </section>
-  <section id="experience">
+
+  <section>
+    <h2>About</h2>
+    <p>With 15+ years of global IT leadership, I am a <strong>Certified SAP Master Data Governance Architect</strong> with a proven record of delivering innovative, enterprise-scale solutions across pharmaceuticals, healthcare, retail, manufacturing, and beyond...</p>
+  </section>
+
+  <section>
     <h2>Experience</h2>
     <ul>
       <li>Cardinal Health – MDG Lead for secure, AI-powered enterprise data initiatives</li>
-      <li>Microsoft and Kyndryl INC (via EXECUTIVE SOFTWARE GUILD INC) – SAP MDG Architect/SME</li>
-      <li>Kontoor Brands – SAP MDG-RFM – Master Data Governance Lead</li>
-      <li>Deere & Company (via SBP Consulting Inc) – MDG architecture and implementation</li>
-      <li>Google (via Deloitte) – MDG–Ariba integration SME</li>
-      <li>GSK UK and Holcim Swiss (via TCS) – ABAP MDM and SRM Lead</li>
-      <li>Deloitte Support Services – Webdynpro ABAP Consultant</li>
-      <li>Wipro Technologies – ABAP Consultant</li>
+      <li>Microsoft, Kyndryl INC, CONA, EMBECTA, BD, National Grid and PepsiCo...</li>
     </ul>
   </section>
-  <section id="publications">
+
+  <section>
     <h2>Publications</h2>
     <ul>
       <li><a href="https://ieeexplore.ieee.org/document/10913746" target="_blank">IEEE Xplore: Tackling Challenges in Life Sciences MDM</a></li>
       <li><a href="https://www.ijcseonline.org/pdf_paper_view.php?paper_id=5777&2-IJCSE-09573.pdf" target="_blank">IJCSE: AI’s Role in Healthcare Data Management</a></li>
-      <li><a href="https://www.ijcaonline.org/archives/volume186/number69/vallepu-2025-ijca-924535.pdf" target="_blank">IJCA: Enhancing AI/ML Performance through MDM</a></li>
-      <li><a href="https://ijcttjournal.org/2024/Volume-72%20Issue-11/IJCTT-V72I11P113.pdf" target="_blank">IJCTT: Data Security and Privacy in MDM</a></li>
-      <li><a href="https://www.lifescienceleader.com/doc/ensuring-security-and-privacy-in-life-sciences-master-data-governance-0001" target="_blank">Life Science Leader: Ensuring Privacy in Life Sciences MDM</a></li>
-      <li><a href="https://www.itprotoday.com/endpoint-security/how-to-ensure-data-protection-it-security-and-compliance-in-life-sciences" target="_blank">IT Pro Today: Compliance in Life Sciences</a></li>
-      <li><a href="https://www.dataversity.net/how-to-ensure-data-quality-and-consistency-in-master-data-management/" target="_blank">Dataversity: Data Quality and Consistency in MDM</a></li>
     </ul>
   </section>
-  <section id="judging">
-    <h2>Judging & Peer Review</h2>
+
+  <section>
+    <h2>Judging</h2>
     <ul>
       <li>Edison Awards 2025 – Expert Reviewer & Judge</li>
       <li>BIG Innovation Awards 2025 – Industry Judge</li>
-      <li>Globee® Technology Awards 2024 – Industry Judge</li>
-      <li>PCCDA 2025, ICCCT 2025, CRM 2025 – TPC Member & Reviewer</li>
-      <li>AIRC 2025, INCIP 2025 – IEEE Technical Committee & Reviewer</li>
-      <li>WCSC 2025, STAI 2025 – Session Chair / Reviewer</li>
     </ul>
   </section>
-  <section id="memberships">
-    <h2>Professional Memberships</h2>
+
+  <section>
+    <h2>Memberships</h2>
     <ul>
       <li>Fellow – Soft Computing Research Society (SCRS), 2025</li>
-      <li>Fellow – The Institution of Electronics and Telecommunication Engineers (IETE), 2024</li>
       <li>Senior Member – IEEE, 2023</li>
-      <li>Professional Member – British Computer Society (BCS), 2024</li>
-      <li>Fellow – SAS Eminent Fellow Member (SEFM), 2025</li>
     </ul>
   </section>
-  <section id="recognition">
-    <h2>Awards & Recognition</h2>
-    <ul>
-      <li>Innovative Tech Leader of the Year – 2023 (The Business Fame)</li>
-      <li>Most Prominent Industry Expert – 2024 (Business Mint)</li>
-      <li>Indian Achievers' International Achievers' Award – 2024</li>
-      <li>“Star of the Quarter” – TCS, 2014</li>
-      <li>CLP Faculty Award – TCS, 2012</li>
-    </ul>
-  </section>
-<section id="talks">
-    <h2>Conferences & Invited Talks</h2>
-  <ul>
-    <li><strong>Oral Presenter</strong> – <em>10th International Conference on Engineering and Emerging Technologies (ICEET 2024)</em>, Dubai, UAE<br>
-      Presented single-author, peer-reviewed paper:<br>
-      <em>"Tackling Challenges in Life Sciences Master Data Management through Effective Machine Learning Implementation"</em><br>
-    </li>
-    <li><strong>Invited Speaker</strong> – <em>5th International Conference on Paradigms of Communication, Computing and Data Analytics (PCCDA 2025)</em><br>
-      Hosted by Pt. Lalit Mohan Sharma Campus, Sri Dev Suman Uttarakhand University in collaboration with SCRS<br>
-      Talk: <em>"Master Data Management in Healthcare: AI-Driven Integration, Decision-Making, and Supply Chain Optimization"</em><br>
-      <small>(Jan 18–19, 2025 | Conference | Post-proceedings to be published by Springer)</small>
-    </li>
-    <li>
-      Delivered an expert session on AI/ML in healthcare data management: <br>
-      – Enhancing data quality<br>
-      – Improving regulatory compliance (GDPR, HIPAA, MDR)<br>
-      – Real-world case studies on predictive decision-making, supply chain visibility, and patient outcomes
-    </li>
-  </ul>
-</section>
 
-  <section id="certifications">
-  <h2>Professional Certifications</h2>
-  <ul>
-    <li>SAP Certified Development Professional – ABAP with SAP NetWeaver 7.0</li>
-    <li>SAP Certified Application Associate – SAP Master Data Governance 1909</li>
-    <li>Project Management Professional (PMP) – Project Management Institute (PMI)</li>
-  </ul>
-</section>
-  <section id="contact">
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li>SAP Certified Development Professional – ABAP</li>
+      <li>SAP Certified Application Associate – SAP Master Data Governance 1909</li>
+      <li>Project Management Professional (PMP)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Recognition</h2>
+    <ul>
+      <li>Innovative Tech Leader of the Year – 2023</li>
+      <li>Indian Achievers' International Achievers' Award – 2024</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Talks</h2>
+    <ul>
+      <li>ICEET 2024 – Presented paper on AI in MDM (Dubai)</li>
+      <li>PCCDA 2025 – Invited Talk on AI in Healthcare MDM (India)</li>
+    </ul>
+  </section>
+
+  <section>
     <h2>Contact</h2>
     <p>Email: <a href="mailto:Ravikumar.vallepu@ieee.org">Ravikumar.vallepu@ieee.org</a></p>
     <p>Phone: +1 309-430-4797</p>
     <p>Location: Greensboro, NC, USA</p>
-    <div class="social-icons">
-      <a href="https://github.com/rkvallepu" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/rkvallepu/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
   </section>
+
   <footer>
-   <p>&copy; 2025 Ravikumar Vallepu. All rights reserved.</p>
+    <p>&copy; 2025 Ravikumar Vallepu. All rights reserved.</p>
   </footer>
-   <script>
-    window.addEventListener("scroll", function () {
-      const navBrand = document.getElementById("navBrand");
-      if (window.scrollY > 120) {
-        navBrand.style.opacity = "1";
-      } else {
-        navBrand.style.opacity = "0";
-      }
-    });
-  </script>
 </body>
 </html>
