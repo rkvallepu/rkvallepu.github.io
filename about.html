@@ -60,6 +60,42 @@
       transition: 0.3s;
     }
 
+    header {
+      background-color: #191970;
+      color: white;
+      padding: 3rem 1rem;
+    }
+
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
     section {
       padding: 2rem 1rem;
       max-width: 1000px;
@@ -98,6 +134,16 @@
     <a href="talks.html">Talks</a>
     <a href="contact.html">Contact</a>
   </nav>
+
+  <header>
+    <div class="container">
+      <img src="profile1.jpg" alt="Ravikumar Vallepu" />
+      <div>
+        <h1>Ravikumar Vallepu</h1>
+        <p>Enterprise Data Architect | Certified SAP MDG & AI/ML Expert | Global Contributor to Secure MDM Innovation</p>
+      </div>
+    </div>
+  </header>
 
   <section>
     <h2>About</h2>
