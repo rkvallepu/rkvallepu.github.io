@@ -22,10 +22,6 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
     }
 
     .nav-brand {
@@ -53,6 +49,7 @@
 
     nav a {
       color: white;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
@@ -66,28 +63,37 @@
     header {
       background-color: #191970;
       color: white;
-      padding: 2rem 1rem;
-      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
     }
 
     header img {
-      width: 120px;
-      height: 120px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-      margin-bottom: 1rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     }
 
     header h1 {
-      font-size: 2rem;
-      margin: 0;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: white;
+      text-shadow: 1px 1px 2px black;
     }
 
     header p {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-      color: #ccc;
+      font-size: 1.2rem;
+      color: #ddd;
     }
 
     section {
@@ -101,14 +107,6 @@
       margin-bottom: 1rem;
     }
 
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 1.5rem;
-    }
-
     footer {
       background: linear-gradient(90deg, #191970, #2800c9);
       color: white;
@@ -118,7 +116,6 @@
     }
   </style>
 </head>
-
 <body>
   <nav>
     <div class="nav-brand">
@@ -138,31 +135,18 @@
   </nav>
 
   <header>
-    <img src="profile1.jpg" alt="Ravikumar Vallepu" />
-    <h1>Ravikumar Vallepu</h1>
-    <p>Enterprise Data Architect | Certified SAP MDG & AI/ML Expert | Global Contributor to Secure MDM Innovation</p>
+    <div class="container">
+      <img src="profile1.jpg" alt="Ravikumar Vallepu" />
+      <div>
+        <h1>Ravikumar Vallepu</h1>
+        <p>Enterprise Data Architect | Certified SAP MDG & AI/ML Expert | Global Contributor to Secure MDM Innovation</p>
+      </div>
+    </div>
   </header>
 
   <section>
-    <h2>Conferences & Invited Talks</h2>
-    <ul>
-      <li><strong>Oral Presenter –</strong> 10th International Conference on Engineering and Emerging Technologies (ICEET 2024), Dubai, UAE<br>
-      <em>Presented single-author, peer-reviewed paper: “Tackling Challenges in Life Sciences Master Data Management through Effective Machine Learning Implementation”</em><br>
-      (Paper ID: 193)</li>
-
-      <li><strong>Invited Speaker –</strong> 5th International Conference on Paradigms of Communication, Computing and Data Analytics (PCCDA 2025), Uttarakhand, India<br>
-      <em>Talk: “Master Data Management in Healthcare: AI-Driven Integration, Decision-Making, and Supply Chain Optimization”</em><br>
-      <small>(Jan 18–19, 2025 | Post-proceedings by Springer)</small></li>
-
-      <li><strong>Expert Session –</strong> Application of AI/ML in Healthcare & Life Sciences<br>
-      Focus on:
-      <ul>
-        <li>Data quality & regulatory compliance (HIPAA, GDPR, MDR)</li>
-        <li>Real-time decision-making</li>
-        <li>AI-driven MDM & global data integration</li>
-      </ul>
-      </li>
-    </ul>
+    <h2>Talks</h2>
+    <p>Content for Talks will go here.</p>
   </section>
 
   <footer>
