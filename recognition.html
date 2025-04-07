@@ -22,10 +22,6 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
     }
 
     .nav-brand {
@@ -53,6 +49,7 @@
 
     nav a {
       color: white;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
@@ -66,28 +63,37 @@
     header {
       background-color: #191970;
       color: white;
-      padding: 2rem 1rem;
-      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
     }
 
     header img {
-      width: 120px;
-      height: 120px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-      margin-bottom: 1rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     }
 
     header h1 {
-      font-size: 2rem;
-      margin: 0;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: white;
+      text-shadow: 1px 1px 2px black;
     }
 
     header p {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-      color: #ccc;
+      font-size: 1.2rem;
+      color: #ddd;
     }
 
     section {
@@ -101,29 +107,12 @@
       margin-bottom: 1rem;
     }
 
-    .award-content {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      align-items: flex-start;
-    }
-
-    .award-content img {
-      max-width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .award-list {
-      flex: 1;
-    }
-
-    .award-list ul {
+    ul {
       padding-left: 20px;
     }
 
-    .award-list li {
-      margin-bottom: 1rem;
+    li {
+      margin-bottom: 1.2rem;
     }
 
     footer {
@@ -135,7 +124,6 @@
     }
   </style>
 </head>
-
 <body>
   <nav>
     <div class="nav-brand">
@@ -155,31 +143,24 @@
   </nav>
 
   <header>
-    <img src="profile1.jpg" alt="Ravikumar Vallepu" />
-    <h1>Ravikumar Vallepu</h1>
-    <p>Enterprise Data Architect | Certified SAP MDG & AI/ML Expert | Global Contributor to Secure MDM Innovation</p>
+    <div class="container">
+      <img src="profile1.jpg" alt="Ravikumar Vallepu" />
+      <div>
+        <h1>Ravikumar Vallepu</h1>
+        <p>Enterprise Data Architect | Certified SAP MDG & AI/ML Expert | Global Contributor to Secure MDM Innovation</p>
+      </div>
+    </div>
   </header>
 
   <section>
     <h2>Recognition & Awards</h2>
-    <div class="award-content">
-      <!-- Image -->
-     <a href="indian_award.jpg" target="_blank">
-  <img src="indian_award.jpg" alt="Indian Achievers' Award" />
-</a>
-
-
-      <!-- Awards List -->
-      <div class="award-list">
-        <ul>
-          <li><strong>Indian Achievers' International Achievers' Award – 2024</strong></li>
-          <li><strong>Innovative Tech Leader of the Year – 2023</strong> (The Business Fame)</li>
-          <li><strong>Most Prominent Industry Expert – 2024</strong> (Business Mint)</li>
-          <li><strong>“Star of the Quarter” – TCS, 2014</strong></li>
-          <li><strong>CLP Faculty Award – TCS, 2012</strong></li>
-        </ul>
-      </div>
-    </div>
+    <ul>
+      <li><strong>Indian Achievers' International Achievers' Award – 2024</strong></li>
+      <li><strong>Innovative Tech Leader of the Year – 2023</strong> (The Business Fame)</li>
+      <li><strong>Most Prominent Industry Expert – 2024</strong> (Business Mint)</li>
+      <li><strong>“Star of the Quarter” – TCS, 2014</strong></li>
+      <li><strong>CLP Faculty Award – TCS, 2012</strong></li>
+    </ul>
   </section>
 
   <footer>
